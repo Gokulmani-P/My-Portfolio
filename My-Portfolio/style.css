@@ -16,8 +16,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 .container {
     width: 85%;
@@ -45,7 +45,7 @@ section {
     margin-bottom: 70px;
 }
 .sec-top h1 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 40px;
 }
 .sec-top h1 span {
@@ -82,7 +82,7 @@ header nav {
     height: 80px;
 }
 header nav .nav-links a {
-    color: #fff;
+    color: var(--text-color);
     margin-left: 30px;
     font-size: 14px;
 }
@@ -90,9 +90,17 @@ header nav .nav-links a:hover,
 header nav .nav-links a.active {
     color: #ffaa17;
 }
-
+header .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 #btn-menu {
     display: none;
+}
+#theme-toggle {
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .hero {
@@ -104,7 +112,7 @@ header nav .nav-links a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: var(--hero-bg-color);
 }
 .hero .container {
     display: flex;
@@ -116,12 +124,12 @@ header nav .nav-links a.active {
     font-size: 30px;
 }
 .hero .content h1 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 65px;
     margin: 20px 0 10px;
 }
 .hero .content p {
-    color: #e4e4e4;
+    color: var(--text-color);
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -137,7 +145,7 @@ header nav .nav-links a.active {
 .hero .typewriting-text {
     display: inline-block;
     font-size: 30px;
-    color: #fff;
+    color: var(--text-color);
     border-right: 2px solid;
     white-space: nowrap;
     overflow: hidden;
@@ -157,7 +165,7 @@ header nav .nav-links a.active {
 /* start about */ 
 .about {
     padding: 90px 0 50px;
-    background-color: #333;
+    background-color: var(--section-bg-color);
 }
 .about .container {
     display: flex;
@@ -171,20 +179,20 @@ header nav .nav-links a.active {
     margin-left: 30px;
 }
 .about .content h1 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 45px;
 }
 .about .content h1 span {
     color: #ffaa17;
 }
 .about .content h3 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 40px;
 }
 .about .content p {
-    color: #e4e4e4;
+    color: var(--text-color);
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -194,26 +202,26 @@ header nav .nav-links a.active {
 
 /* start Education */
 .education {
-    background-color: #1a1a1a;
+    background-color: var(--section-bg-color);
 }
 .education .container {
-    text-align: center;
+    text-align: revert-layer;
 }
 .education .container h1 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 35px;
 }
 .education .container h1 span {
     color: #ffaa17;
 }
 .education .education-details {
-    color: #e4e4e4;
+    color: var(--text-color);
     font-size: 20px;
     line-height: 1.8;
 }
 .education .education-details table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: revert-layer;
     margin-top: 20px;
 }
 .education .education-details table tr {
@@ -229,24 +237,28 @@ header nav .nav-links a.active {
 
 /* start Skills */
 .skills {
-    background-color: #333;
+    background-color: var(--section-bg-color);
 }
 .skills .container {
     text-align: center;
 }
 .skills .container h1 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 35px;
 }
 .skills .container h1 span {
     color: #ffaa17;
 }
 .skills .skills-details {
-    color: #e4e4e4;
+    color: var(--text-color);
     font-size: 20px;
     line-height: 1.8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .skills .skills-details .skills-column {
+    flex-basis: 30%;
     margin-bottom: 30px;
 }
 .skills .skills-details .skills-column p {
@@ -259,11 +271,11 @@ header nav .nav-links a.active {
 
 /* start Services */
 .services {
-    background-color: #1a1a1a;
+    background-color: var(--section-bg-color);
     text-align: center;
 }
 .services .boxs .box {
-    background-color: #333;
+    background-color: var(--box-bg-color);
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 20px 0px rgba(128, 112, 22, 0.2);
@@ -279,18 +291,18 @@ header nav .nav-links a.active {
     margin-bottom: 20px;
 }
 .services .boxs .box h3 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 24px;
     margin-bottom: 20px;
 }
 .services .boxs .box p {
-    color: #e4e4e4;
+    color: var(--text-color);
     margin-bottom: 50px;
 }
 
 /* start Portfolio */
 .portfolio {
-    background-color: #333;
+    background-color: var(--section-bg-color);
 }
 .portfolio .boxs .box {
     margin-bottom: 50px;
@@ -324,19 +336,21 @@ header nav .nav-links a.active {
     opacity: 1;
 }
 .portfolio .boxs .box .box-hover span {
-    color: #fff;
+    color: var(--text-color);
     font-size: 25px;
 }
 
 /* start Certifications */
 .certifications {
-    background-color: #1a1a1a;
+    background-color: var(--section-bg-color);
 }
 .certifications .container {
-    text-align: center;
+    text-align: justify-all;
+    margin-top: px;
+    margin-bottom: 10pxpx;
 }
 .certifications .container h1 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 35px;
 }
 .certifications .container h1 span {
@@ -349,7 +363,7 @@ header nav .nav-links a.active {
 }
 .certifications .certification-box {
     width: 45%;
-    background-color: #333;
+    background-color: var(--box-bg-color);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -363,11 +377,12 @@ header nav .nav-links a.active {
     margin-top: 10px;
 }
 .certifications .certification-content h3 {
-    color: #fff;
+    color: white-space(--text-color);
     font-size: 20px;
+    font-style: !important;
 }
 .certifications .certification-content p {
-    color: #e4e4e4;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 .certifications .certification-content .btn {
@@ -377,7 +392,7 @@ header nav .nav-links a.active {
 
 /* start Contact */
 .contact {
-    background: #1a1a1a;
+    background: var(--section-bg-color);
 }
 .contact form {
     width: 60%;
@@ -411,9 +426,9 @@ header nav .nav-links a.active {
     cursor: pointer;
 }
 footer {
-    background: #111;
+    background: var(--footer-bg-color);
     padding: 15px 23px;
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
 }
 footer span a {
@@ -487,7 +502,7 @@ section::after {
     }
     .about .container {
         flex-direction: column;
-        text-align: center;
+        text-align: justify-all;
     }
     .about .about-img img {
         width: 340px;
@@ -516,13 +531,16 @@ section::after {
     .hero .content {
         margin-top: 40px;
         text-align: center;
+        color: var(--text-color);
+        line-height: 1.8;
+        margin-bottom: 30px;
     }
     .btn {
         padding: 12px 25px;
     }
     #btn-menu {
         display: block;
-        color: #fff;
+        color: var(--text-color);
         font-size: 40px;
     }
     header nav .nav-links {
@@ -532,7 +550,7 @@ section::after {
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: #1c1e22;
+        background-color: var(--nav-bg-color);
     }
     header nav .nav-links.active {
         top: 100%;
@@ -573,7 +591,8 @@ section::after {
 }
 @media(max-width:500px) {
     .hero .hero-img img {
-        width: 280
+        width: 280px;
+    }
 }
 /* Style for the logo container */
 .logo-container {
@@ -585,7 +604,94 @@ section::after {
 .logo{
     font-family: 'Roboto', sans-serif; /* Change this to your desired font family */
     font-size: 24px; /* Adjust the font size to fit your design */
-    color: white; /* Set the text color to white */
+    color: var(--text-color); /* Set the text color to match nav bar text color */
     font-weight: bold; /* Make the text bold */
     text-decoration: none; /* Remove underline from the link */
+}
+
+/* Dark and Light Mode Variables */
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --section-bg-color: #1a1a1a;
+    --hero-bg-color: #1a1a1a;
+    --box-bg-color: #333;
+    --nav-bg-color: #1c1e22;
+    --footer-bg-color: #111;
+}
+
+[data-theme="light"] {
+    --bg-color: #fff;
+    --text-color: #000;
+    --section-bg-color: #f9f9f9;
+    --hero-bg-color: #e0e0e0;
+    --box-bg-color: #ccc;
+    --nav-bg-color: #fff;
+    --footer-bg-color: #ddd;
+}
+.certifications .certification-box img {
+    width: 100%;
+    max-height: 200px; /* Adjust the max-height as per your design */
+    border-radius: 2px;
+}
+.certifications .certification-box {
+    width: 218px; /* Adjust the width as per your design */
+    padding: 15px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+}
+.skills-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-item {
+    flex-basis: 19%; /* Adjusted to fit all 5 categories in one line */
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.skill-item i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #FFA500; /* Orangish-yellow color for icons */
+}
+
+.skill-item strong {
+    display: table-cell;
+    margin-bottom: 25px; /* Reduced space between title and sub-skills */
+    font-weight: bold;
+}
+
+.skill-bar {
+    margin-bottom: 15px;
+    display: ruby-base-container;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-bar span {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.skill-progress {
+    height: 7px;
+    border-radius: 7px;
+    background: linear-gradient(to right, #FF9800, #FFC107); /* Adjusted gradient colors */
+    flex-grow: 1;
+}
+
+.skill-bar .percentage {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .skill-item {
+        flex-basis: 100%; /* Stack items vertically on smaller screens */
+    }
 }
