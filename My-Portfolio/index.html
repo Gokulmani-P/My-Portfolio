@@ -7,7 +7,6 @@
     <title>Gokul-Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="php" href="sendmail.php">
 </head>
 <body>
     <header>
@@ -15,7 +14,10 @@
             <div class="logo-container">
                 <a href="#home" class="logo">Gokul</a>
             </div>
-            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="nav-icons">
+                <i id="btn-menu" class="fa-solid fa-bars"></i>
+                <i id="theme-toggle" class="fa-solid fa-moon"></i>
+            </div>
             <div class="nav-links">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
@@ -35,7 +37,7 @@
                 <h4>Hello, I'm</h4>
                 <h1 class="typewriter">Gokulmani</h1>
                 <p class="typewriting-text"></p><br>
-                A passionate creator bringing innovative ideas to life through technology.<br>Explore the portfolio to see the latest projects and designs.With a focus on <br>user-centric solutions, I strive to blend creativity with functionality.Dedicated to <br>continuous learning and pushing the boundaries of what's possible in digital experiences.<br> </br><br>
+                <div class= "simple-about">A passionate creator bringing innovative ideas to life through technology. Explore the portfolio to see the latest projects and designs. With a focus on user-centric solutions, I strive to blend creativity with functionality. Dedicated to continuous learning and pushing the boundaries of what's possible in digital experiences.</div><br><br><br>
                 <a href="https://drive.google.com/file/d/1p26JPEjKYUX_pI-GVGFHogfGdIYrH31D/view?usp=sharing" class="btn">Download CV</a>
             </div>
             <div class="hero-img">
@@ -53,16 +55,11 @@
                 <h1>About <span>Me</span></h1>
                 <h3>Front-End Developer</h3>
                 <p>Hello and welcome to my portfolio! I’m Gokulmani, a passionate Front-End Developer based in Salem, currently in the final year of my B.E. in Electronics and Communication Engineering.
-
-My journey into front-end development began with a fascination for technology and its potential to create engaging, user-friendly experiences. I have honed my skills in HTML, CSS, JavaScript, and various front-end frameworks.
-
-In my projects, I focus on delivering visually stunning and highly functional websites. Each project has been a learning experience, pushing me to explore new technologies and innovative solutions.
-
-What sets me apart is my commitment to continuous learning. I am always exploring new tools and techniques to stay at the forefront of web development trends.
-
-Outside of my academic and professional pursuits, I am an avid learner and explorer. I am always seeking new ways to expand my horizons and fuel my creativity.
-
-I invite you to explore my portfolio and see the passion and dedication I bring to my work. Let’s connect and discuss how we can bring your ideas to life.</p>
+                My journey into front-end development began with a fascination for technology and its potential to create engaging, user-friendly experiences. I have honed my skills in HTML, CSS, JavaScript, and various front-end frameworks.
+                In my projects, I focus on delivering visually stunning and highly functional websites. Each project has been a learning experience, pushing me to explore new technologies and innovative solutions.
+                What sets me apart is my commitment to continuous learning. I am always exploring new tools and techniques to stay at the forefront of web development trends.
+                Outside of my academic and professional pursuits, I am an avid learner and explorer. I am always seeking new ways to expand my horizons and fuel my creativity.
+                I invite you to explore my portfolio and see the passion and dedication I bring to my work. Let’s connect and discuss how we can bring your ideas to life.
                 <div class="btns">
                     <a href="https://drive.google.com/file/d/1p26JPEjKYUX_pI-GVGFHogfGdIYrH31D/view?usp=sharing" class="btn">Download CV</a>
                     <a href="#contact" class="btn">Contact Me</a>
@@ -95,36 +92,100 @@ I invite you to explore my portfolio and see the passion and dedication I bring 
         </div>
     </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="sec-top">
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="sec-top">
                 <h1>My <span>Skills</span></h1>
             </div>
-            <div class="skills-details">
-                <div class="skills-column">
-                    <p><i class="fa-solid fa-code"></i> 
-                        <strong>Languages:</strong></p>
-                    <p>Core Java, OOPS, SQL, JavaScript, HTML & CSS</p>
+        <div class="skills-details">
+            <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <strong>Languages</strong>
+                <div class="skill-bar">
+                    <span><i class="fab fa-java"></i> Core Java</span>
+                    <div class="skill-progress" style="width: 80%;"></div><span class="percentage">80%</span>
                 </div>
-                <div class="skills-column">
-                    <p><i class="fa-solid fa-cubes"></i> <strong>Frameworks:</strong></p>
-                    <p>Spring, Hibernate</p>
+                <div class="skill-bar">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <div class="skill-progress" style="width: 75%;"></div><span class="percentage">75%</span>
                 </div>
-                <div class="skills-column">
-                    <p><i class="fa-solid fa-tools"></i> <strong>Tools:</strong></p>
-                    <p>React Native, Web flow, MySQL, Excel, PowerPoint, SQLite</p>
+                <div class="skill-bar">
+                    <span><i class="fab fa-js"></i> JavaScript</span>
+                    <div class="skill-progress" style="width: 85%;"></div><span class="percentage">85%</span>
                 </div>
-                <div class="skills-column">
-                    <p><i class="fa-solid fa-laptop-code"></i> <strong>Platforms:</strong></p>
-                    <p>Visual Studio Code, IntelliJ IDEA, Android Studio, GitHub</p>
+                <div class="skill-bar">
+                    <span><i class="fab fa-html5"></i> HTML & CSS</span>
+                    <div class="skill-progress" style="width: 90%;"></div><span class="percentage">90%</span>
                 </div>
-                <div class="skills-column">
-                    <p><i class="fa-solid fa-user"></i> <strong>Soft Skills:</strong></p>
-                    <p>Problem solving, Excellent Communication, Time Management, Creativity, Adaptability</p>
+                <div class="skill-bar">
+                    <span><i class="fab fa-php"></i> PHP</span>
+                    <div class="skill-progress" style="width: 70%;"></div><span class="percentage">70%</span>
                 </div>
             </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-cubes"></i>
+                <strong>Frameworks</strong>
+                <div class="skill-bar">
+                    <span><i class="fab fa-react"></i> React</span>
+                    <div class="skill-progress" style="width: 85%;"></div><span class="percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fab fa-angular"></i> Angular</span>
+                    <div class="skill-progress" style="width: 80%;"></div><span class="percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fab fa-vuejs"></i> Vue.js</span>
+                    <div class="skill-progress" style="width: 75%;"></div><span class="percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fab fa-node-js"></i> Node.js</span>
+                    <div class="skill-progress" style="width: 70%;"></div><span class="percentage">70%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-tools"></i>
+                <strong>Tools</strong>
+                <div class="skill-bar">
+                    <span><i class="fab fa-react"></i> React Native</span>
+                    <div class="skill-progress" style="width: 80%;"></div><span class="percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fas fa-database"></i> MySQL</span>
+                    <div class="skill-progress" style="width: 85%;"></div><span class="percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fas fa-file-excel"></i> Excel</span>
+                    <div class="skill-progress" style="width: 75%;"></div><span class="percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fas fa-database"></i> SQLite</span>
+                    <div class="skill-progress" style="width: 70%;"></div><span class="percentage">70%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <strong>Platforms</strong>
+                <div class="skill-bar">
+                    <span><i class="fab fa-VScode"></i> VS Code</span>
+                    <div class="skill-progress" style="width: 90%;"></div><span class="percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fab fa-Intelij"></i> IntelliJ IDEA</span>
+                    <div class="skill-progress" style="width: 85%;"></div><span class="percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <span><i class="fab fa-github"></i> GitHub</span>
+                    <div class="skill-progress" style="width: 75%;"></div><span class="percentage">75%</span>
+                    <div class="skill-bar">
+                    <span><i class="fab fa-wordpress"></i> WordPress</span>
+                    <div class="skill-progress" style="width: 75%;"></div><span class="percentage">75%</span>
+                </div>
+            </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <section id="certifications" class="certifications">
         <div class="container">
@@ -136,7 +197,7 @@ I invite you to explore my portfolio and see the passion and dedication I bring 
                     <img src="img/blockchain certify.jpg" alt="Blockchain Development">
                     <div class="certification-content">
                         <h3>Blockchain Development (Naan Mudhalvan)</h3>
-                        <p>CERTIFICATE August 2023</p><br>
+                        <p>August 2023</p><br>
                         <a href="https://drive.google.com/file/d/1iKWaEFl0WcMj6IDGgzQ5_our7w3XzeYm/view?usp=sharing" class="btn">View Certificate</a>
                     </div>
                 </div>
@@ -144,7 +205,7 @@ I invite you to explore my portfolio and see the passion and dedication I bring 
                     <img src="img/technohacks python.jpg" alt="Programming in Python">
                     <div class="certification-content">
                         <h3>Programming in Python (TechnoHacks)</h3>
-                        <p>CERTIFICATE September 2023</p><br>
+                        <p>September 2023</p><br>
                         <a href="https://drive.google.com/file/d/1uo8lzqqISAYyY6uPnhmUB_BvH9c-j3uM/view?usp=sharing" class="btn">View Certificate</a>
                     </div>
                 </div>
@@ -152,7 +213,7 @@ I invite you to explore my portfolio and see the passion and dedication I bring 
                     <img src="img/ai coursera certify.jpg" alt="Introduction to Generative AI">
                     <div class="certification-content">
                         <h3>Introduction to Generative AI (Coursera)</h3>
-                        <p>CERTIFICATE August 2024</p><br>
+                        <p>August 2024</p><br>
                         <a href="https://drive.google.com/file/d/1zGIKC5WG3ENHy22aC_otkLYwA2ir-sfc/view?usp=sharing" class="btn">View Certificate</a>
                     </div>
                 </div>
@@ -160,7 +221,7 @@ I invite you to explore my portfolio and see the passion and dedication I bring 
                     <img src="img/Data analytics accenture.jpg" alt="Data Analytics and Visualization">
                     <div class="certification-content">
                         <h3>Data Analytics and Visualization (Accenture)</h3>
-                        <p>CERTIFICATE May 2024</p><br>
+                        <p>May 2024</p><br>
                         <a href="https://drive.google.com/file/d/1stVV1zmo2VNYMHMlqpFmYBj4AUobvCpo/view?usp=sharing" class="btn">View Certificate</a>
                     </div>
                 </div>
@@ -216,7 +277,8 @@ I invite you to explore my portfolio and see the passion and dedication I bring 
                 </div>
                 <div class="box">
                     <div class="box-hover">
-                        <span>Landing Page</span></div>
+                        <span>Landing Page</span>
+                    </div>
                     <img src="img/project3.png" alt="">
                 </div>
                 <div class="box">
@@ -241,49 +303,52 @@ I invite you to explore my portfolio and see the passion and dedication I bring 
         </div>
     </section>
 
-   <section id="contact" class="contact">
-    <div class="container">
-        <div class="sec-top">
-            <h1>Contact <span>Me</span></h1>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="sec-top">
+                <h1>Contact <span>Me</span></h1>
+            </div>
+            <form action="sendmail.php" method="POST">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+                <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
-        <form action="your-server-script.php" method="POST">
-            <input type="text" name="firstName" placeholder="First Name" required>
-            <input type="text" name="lastName" placeholder="Last Name" required>
-            <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    </section>
+
+    <style>
+      .social-icons {
+        display: flex;
+        padding-bottom: 30px;
+        padding-top: 25px;
+        justify-content: center; /* Center align items horizontally */
+        gap: 20px; /* Add space between icons */
+      }
+
+      .social-icon {
+        font-size: 24px; /* Increase icon size */
+        color: #FFA500; /* Orangish-yellow color */
+      }
+    </style>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/gokulmani2004" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/daisy.gokul" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Gokulmani-P" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="mailto: gokulmani1973@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
     </div>
-</section>
-<style>
-  .social-icons {
-    display: flex;
-    padding-bottom: 30px;
-    padding-top: 25px;
-    justify-content: center; /* Center align items horizontally */
-    gap: 20px; /* Add space between icons */
-  }
-
-  .social-icon {
-    font-size: 24px; /* Increase icon size */
-    color: #FFA500; /* Orangish-yellow color */
-  }
-</style>
-
-<div class="social-icons">
-  <a href="https://www.linkedin.com/in/gokulmani2004" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://www.instagram.com/daisy.gokul" class="social-icon"><i class="fab fa-instagram"></i></a>
-  <a href="https://github.com/Gokulmani-P" class="social-icon"><i class="fab fa-github"></i></a>
-  <a href="mailto: gokulmani1973@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-</div>
-
 
     <footer>
         <span>&copy; 2024 Gokul. All rights reserved.</span>
     </footer>
 
     <script src="main.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
